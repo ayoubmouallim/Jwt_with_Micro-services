@@ -21,9 +21,9 @@ public class CuustomerServiceApplication {
         return args -> {
             repositoryRestConfiguration.exposeIdsFor(Customer.class);
 
-                customerRepository.save(new Customer(null, "Enset", "contact@enset-media.ma"));
-            customerRepository.save(new Customer(null, "FSTM", "contact@fstm.ma"));
-            customerRepository.save(new Customer(null, "ENSAM", "contact@ensam.ma"));
+            customerRepository.save(new Customer(null, "Kamal", "kamal@gmail.com"));
+            customerRepository.save(new Customer(null, "farid", "farid@gmail.com"));
+            customerRepository.save(new Customer(null, "Ismael", "ismael@gmail.com"));
             customerRepository.findAll().forEach(System.out::println);
 
         };
